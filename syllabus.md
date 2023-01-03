@@ -25,7 +25,6 @@ Tuesdays and Thursdays @ 2:00 PM-3:15 PM in Rice 130 w/ Prof. Tom Horton
 Individual Team Meetings with TAs on Sundays or Mondays (Determined by Teams + TA) 
 
 ## Staff Information
-## Staff Information
 __Instructor:__ Prof. Tom Horton    
 Office: Rice 401  
 Office Hours: TBD     
@@ -42,23 +41,19 @@ __Teaching Assistants:__ TBD
 
 ## Communication and Logistics
 
-### Online Coursepack and YouTube Channel
+### Online Coursepack
 {: .no_toc }
 
 Online Coursepack @ [https://www.cs3240.org](https://www.cs3240.org)
 
 There is no official textbook for the course that you need to purchase.  We are creating our own online coursepack using the video content we created during COVID, which is available at [https://www.cs3240.org](https://www.cs3240.org).  Note that we are creating this as we go along during the semester, but will do our best to stay ahead of the pace of the class.
 
-You can also subscribe to the [YouTube playlist](https://www.youtube.com/watch?v=A3aJziULnIo&list=PL8KunT5QtGYSsCrQhfIlXXEV_AKKVc6af) so you are always up to date, but we will also post all videos (with some lecture notes) on the coursepack as we build it out.
-
 ### Discord
 {: .no_toc }
 
-We found Discord worked exceptionally well for all of last year and we plan to incorporate it again, both as a means of communication for staff and teams, but also for general discussion and announcements.  
-
 We will be using Discord for the following:
 
-* Online office hours (professor and TA)
+* Online office hours (TAs)
 * Online team meetings and discussions
 * General project / course discussion
 * Off-topic channels for general discussion
@@ -68,7 +63,7 @@ We will not be using Discord for:
 * Long-form project questions / help (use Piazza or go to office hours)
 * Regrades (use Gradescope first, then office hours only if not resolved)
 * Direct messaging the staff about code questions, etc. (use Piazza)
-* Direct messaging the faculty about sensitive / grading issues (use Piazza or email)
+* Direct messaging the faculty about sensitive / grading issues (use private messages in Piazza or email)
 
 More information about joining our Discord server will be available in Collab at the start of the semester.
 
@@ -76,8 +71,6 @@ More information about joining our Discord server will be available in Collab at
 {: .no_toc }
 
 Piazza @ [https://piazza.com/class/lcgef9rve851z3](https://piazza.com/class/lcgef9rve851z3)    
-
-Think of Discord as stopping by for a quick chat, for a meeting, or for hanging out, while Piazza is for submitting significant help requests or questions.
 
 We will be using Piazza for the following:
 
@@ -105,23 +98,23 @@ We will not be using email for:
 * Project questions (use Piazza)
 * Guided Practice questions (use Piazza)
 
-9:30 students should email Sherriff, while 3:30 students should email McBurney.  You do not need to CC the other professor; we will get the other person involved if necessary.  _PLEASE_ make sure to put "CS 3240" in the subject line somewhere so we can keep track of your request!  And please be patient with us in responding.  We both receive A LOT of email and it's easy to get behind.  If there is a time-critical nature to your note, please let us know that as well.
+You should, in general, email the professor for the section that you are enrolled in.  You do not need to CC the other professor; we will get the other person involved if necessary.  _PLEASE_ make sure to put "CS 3240" in the subject line somewhere so we can keep track of your request!  And please be patient with us in responding.  We both receive A LOT of email and it's easy to get behind.  If there is a time-critical nature to your note, please let us know that as well.
 
 ### Who do I ask about...?
 {: .no_toc }
 
 * Team meetings -> Discord
-* Online office hours -> Discord
+* Online office hours (TA) -> Discord
 * Technical questions (python, django, heroku, etc.) -> Piazza or TA office hours
 * Project requriements -> Piazza or office hours
 * Regrades -> Gradescope (office hours only if issues with Gradescope)
 * Personal issues -> Email your professor
 * Team issues -> Email your TA and/or your professor
 
-For the context of the project, you should consider the professors "upper management" and the TAs "senior developers / managers."  Thus, high-level, requirements-based, or course-management sort of questions should go to the professors, while all technical and initial grading questions should to go the TAs.  (Honestly, you're probably going to get a faster, better answer to a Django question if you go to the TAs... sure, Prof. Sherriff or McBurney can answer it... eventually... after a lot of Googling... but you could also ask a TA who did the project last semester or has been a TA for several semesters...)
+For the context of the project, you should consider the professors "upper management" and the TAs "senior developers / managers."  Thus, high-level, requirements-based, or course-management sort of questions should go to the professors, while all technical and initial grading questions should to go the TAs.  (Honestly, you're probably going to get a faster, better answer to a Django question if you go to the TAs... sure, the professors can answer it... eventually... after a lot of Googling... but you could also ask a TA who did the project last semester or has been a TA for several semesters...)
 
 ## Course Description
-Analyzes modern software engineering practice for multi-person projects; methods for requirements specification, design, implementation, verification, and maintenance of large software systems; advanced software development techniques and large project management approaches; project planning, scheduling, resource management, accounting, configuration control, and documentation. Prerequisite: CS 2150 with a grade of C- or higher.
+Analyzes modern software engineering practice for multi-person projects; methods for requirements specification, design, implementation, verification, and maintenance of large software systems; advanced software development techniques and large project management approaches; project planning, scheduling, resource management, accounting, configuration control, and documentation. 
 
 ### Course Objectives
 {: .no_toc }   
@@ -197,13 +190,13 @@ We will utilize a positive-reinforcement grading policy in this course. As the p
 
 __Final Exam:__ The final exam in this course is an opportunity to show mastery of material that was previously missed on earlier quizzes.  If a student has earned the maximum number of points on the three quizzes, they have a set of scores they are comfortable with, or if they already have an A in the course, the student does not (and should not) take the final exam.  If a student wishes to take the final exam, they can earn back up to 100 XP total toward the available 300 XP from quizzes.  We will create a custom final exam for each student based upon only the questions the student missed on the previous three quizzes.  While it is possible to lose points on the final exam, this is a relatively rare occurance, usually stemming from wild guessing on questions.  Students can come to either exam session, regardless of enrolled section.
 
-__Project Demos:__ Student teams will demo their final project to either Prof. McBurney or Prof. Sherriff in the days following the last day of class on December 7, 8, and 9.  All students are expected to attend the demo for their team.  Demos should only last around 20-30 minutes.  Students do not need to prepare anything for the demo (e.g. no slides, no presentation, etc.).  The team will walk the professor through the app and will answer various questions about its design and implementation.
+__Project Demos:__ Student teams will demo their final project to one of the professors in the days following the last day of class.  All students are expected to attend the demo for their team.  Demos should only last around 20 minutes.  Students do not need to prepare anything for the demo (e.g. no slides, no presentation, etc.).  The team will walk the professor through the app and will answer various questions about its design and implementation.
 
 ## Class Management
 
 ### Project Groups
 {: .no_toc }
-You are expected to work as a member of your group in this course and cooperate with your colleagues. Cooperation means attending group meetings, completing your assignments properly and on time, letting your group know if you will be out of contact, responding to e-mail from your group, and so on. If there is a lack of cooperation by any group member, it must be brought to the attention of the instructor as soon as it happens. If the lack of cooperation is serious, the offending group member’s semester grade will be lowered.  
+You are expected to work as a member of your group in this course and cooperate with your colleagues. Cooperation means attending group meetings, completing your assignments properly and on time, letting your group know if you will be out of contact, responding to e-mail from your group, and so on. If there is a lack of cooperation by any group member, it must be brought to the attention of the instructor as soon as it happens. If the lack of cooperation is serious, the offending group member’s semester grade will be lowered.  _Note that this can result in a student automatically failing the course!_
 
 ### Attendance
 {: .no_toc }
@@ -260,7 +253,7 @@ In ALL cases, you need to cite all sources at the top of the file where the code
 
 ## How to Cite Code
 {: .no_toc }
-Use the following format as an example citing code you use. You may not have all of these fields available, but this should give you a good idea of things to look for.  Order by title of the software package.  Use the appropriate commenting format for the programming language of your source code.  Below is a genearl example of a citation format.  Does yours have to look *exactly* like this?  No, nor does it have to have all the fields.  It does have to have enough to give the proper credit and so we can find the resource if needed.
+Use the following format as an example for citing code you use. You may not have all of these fields available, but this should give you a good idea of things to look for.  Order by title of the software package.  Use the appropriate commenting format for the programming language of your source code.  Below is a genearl example of a citation format.  Does yours have to look *exactly* like this?  No, nor does it have to have all the fields.  It does have to have enough to give the proper credit and so we can find the resource if needed.
 
 ```
 /***************************************************************************************
