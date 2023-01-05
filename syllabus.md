@@ -41,13 +41,10 @@ __Teaching Assistants:__ TBD
 
 ## Communication and Logistics
 
-### Online Coursepack
+### Textbook / Online Coursepack
 {: .no_toc }
 
-Online Coursepack @ [https://www.cs3240.org](https://www.cs3240.org)
-
-There is no official textbook for the course that you need to purchase.  We are creating our own online coursepack using the video content we created during COVID, which is available at [https://www.cs3240.org](https://www.cs3240.org).  Note that we are creating this as we go along during the semester, but will do our best to stay ahead of the pace of the class.
-
+There is no official textbook for the course that you need to purchase.  We have our own online coursepack using the video content we created during COVID, which is available at [https://www.cs3240.org](https://www.cs3240.org).
 ### Discord
 {: .no_toc }
 
@@ -100,7 +97,7 @@ We will not be using email for:
 
 You should, in general, email the professor for the section that you are enrolled in.  You do not need to CC the other professor; we will get the other person involved if necessary.  _PLEASE_ make sure to put "CS 3240" in the subject line somewhere so we can keep track of your request!  And please be patient with us in responding.  We both receive A LOT of email and it's easy to get behind.  If there is a time-critical nature to your note, please let us know that as well.
 
-### Who do I ask about...?
+### Where or who do I ask about...?
 {: .no_toc }
 
 * Team meetings -> Discord
@@ -140,11 +137,10 @@ The topics to be covered in the course include:
 {: .no_toc }
 You should meet the following requirements to take this class:
 
-1. __Prerequisite: CS 2150 --OR -- CS 3140 with a grade of C- or higher.__  Students that do not meet this prerequisite may be dropped at any point from the class.  It is the student's responsibility to check this prerequisite and/or speak with the instructor ASAP.
+1. __Prerequisite: CS 2150 --OR-- CS 3140 with a grade of C- or higher.__  Students that do not meet this prerequisite may be dropped at any point from the class.  It is the student's responsibility to check this prerequisite and/or speak with the instructor ASAP.
 2. Willing and able to attend in-person lectures.
-3. Be a meaningful contributor to your project team.
-4. Participate to the best of your ability in discussions on Piazza and Discord.
-5. You will be expected to learn programming languages and platforms on your own in this class! If you don’t feel comfortable with this, please talk to the staff as soon as possible!
+3. Be a meaningful contributor to your team project, which includes your team role responsibilities AND writing code that will be incorporated into the final version of the product.
+4. You will be expected to learn programming languages and platforms on your own in this class! If you don’t feel comfortable with this, please talk to the staff as soon as possible!
 
 ## Assessment and Grading
 We will utilize a positive-reinforcement grading policy in this course. As the purpose of this class is for you to gain experience as a software developer working in a team on a larger-scale project, your grade in this course will be based on experience points (XP). Every student begins the course with 0 XP.  As you complete assessments, work on the project, and complete Guided Practice activities, you will earn XP.  Some assessments will have a way to retake or resubmit to earn some of the XP that was not earned on the first attempt.  Please see individual assessments for more information regarding how this mechanic works.
