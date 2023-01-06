@@ -19,32 +19,28 @@ Spring 2023 Semester
 https://s23.cs3240.org   
 
 ## Lecture and Lab Sessions
-Tuesdays and Thursdays @ 9:30 AM-10:45 AM in Rice 130 w/ Prof. Mark Sherriff    
-Tuesdays and Thursdays @ 2:00 PM-3:15 PM in Rice 130 w/ Prof. Tom Horton    
-
-Individual Team Meetings with TAs on Sundays or Mondays (Determined by Teams + TA) 
-
+{% for section in site.data.semesterinfo.lecture_sections %} {{ section }}    
+{% endfor %}   
 ## Staff Information
-__Instructor:__ Prof. Tom Horton    
-Office: Rice 401  
-Office Hours: TBD     
-Email: [horton@virginia.edu](horton@virginia.edu)      
-Website: [https://www.cs.virginia.edu/~horton/](https://www.cs.virginia.edu/~horton/) 
 
-__Instructor:__ Prof. Mark Sherriff   
-Office: Rice 400   
-Office Hours: TBD    
-Email: [sherriff@virginia.edu](mailto:sherriff@virginia.edu)    
-Website: [http://marksherriff.com](http://marksherriff.com)    
+{% for professor in site.data.professors %}
 
-__Teaching Assistants:__ TBD 
+__Instructor:__ {{ professor.name }}   
+Office: {{ professor.office }}   
+Office Hours: {{ professor.office_hours }}        
+Email: [{{ professor.email }}]({{ professor.email }})   
+Website: [{{ professor.website }}]({{ professor.website }})   
+
+{% endfor %}
+
+__Teaching Assistants:__ {% for ta in site.data.tas %} {{ ta.name }}, {% endfor %}  
 
 ## Communication and Logistics
 
 ### Textbook / Online Coursepack
 {: .no_toc }
 
-There is no official textbook for the course that you need to purchase.  We have our own online coursepack using the video content we created during COVID, which is available at [https://www.cs3240.org](https://www.cs3240.org).
+There is no official textbook for the course that you need to purchase.  We have our own online coursepack using the video content we created during COVID, which is available at [{{ site.data.externallinks.coursepack }}]({{ site.data.externallinks.coursepack }}).
 ### Discord
 {: .no_toc }
 
@@ -67,7 +63,7 @@ More information about joining our Discord server will be available in Collab at
 ### Piazza
 {: .no_toc }
 
-Piazza @ [https://piazza.com/class/lcgef9rve851z3](https://piazza.com/class/lcgef9rve851z3)    
+Piazza @ [{{ site.data.externallinks.piazza }}]({{ site.data.externallinks.piazza }})    
 
 We will be using Piazza for the following:
 

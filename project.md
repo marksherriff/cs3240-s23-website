@@ -124,7 +124,7 @@ Each sprint is graded out of 25 XP.  In general, the following grading standard 
 * 5 XP: Little progress was made toward completing the project during this sprint.
 * 0 XP: Project is in danger.
 
-### Sprint 1: Project Organization
+### Sprint 1: {{site.data.semesterinfo.sprint_1.goal}}
 
 __Due:__ {{site.data.semesterinfo.sprint_1.meeting_dates}}
 
@@ -136,7 +136,7 @@ __TEAM EVALS:__ No Team Evals this week.
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  (No, you won't have much to report this week, but think about what's coming up and discuss that.)
 
-### Sprint 2: Requirements Elicitation
+### Sprint 2: {{site.data.semesterinfo.sprint_2.goal}}
 
 __Due:__ {{site.data.semesterinfo.sprint_2.meeting_dates}}
 
@@ -153,7 +153,7 @@ __TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you wi
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint-report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
-### Sprint 3: Login Integration
+### Sprint 3: {{site.data.semesterinfo.sprint_3.goal}}
 
 __Due:__ {{site.data.semesterinfo.sprint_3.meeting_dates}}
 
@@ -165,7 +165,7 @@ __TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you wi
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
-### Sprint 4: First Major Feature w/ SIS API
+### Sprint 4: {{site.data.semesterinfo.sprint_4.goal}}
 
 __Due:__ {{site.data.semesterinfo.sprint_4.meeting_dates}}
 
@@ -177,7 +177,7 @@ __TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you wi
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint-report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
-### Sprint 5: Next Major Feature
+### Sprint 5: {{site.data.semesterinfo.sprint_5.goal}}
 
 __Due:__ {{site.data.semesterinfo.sprint_5.meeting_dates}}
 
@@ -189,7 +189,7 @@ __TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you wi
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
-### Sprint 6: Beta Version
+### Sprint 6: {{site.data.semesterinfo.sprint_6.goal}}
 
 __Due:__ {{site.data.semesterinfo.sprint_6.meeting_dates}}
 

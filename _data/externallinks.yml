@@ -18,12 +18,18 @@ final_submission_pledge: "#"
 
 team_declaration_form: "#"
 
-github_classroom: "#"
+github_classroom_project: "#"
 
-github_organization: "#"
+github_classroom_django: "#"
 
-gradescope: "#"
+github_classroom_gp-a: "#"
 
-piazza: "#"
+github_organization: "https://github.com/uva-cs3240-s23"
 
-lms: "#"
+gradescope: "https://www.gradescope.com/courses/480880"
+
+piazza: "https://piazza.com/class/lcgef9rve851z3"
+
+lms: "https://collab.its.virginia.edu/portal/site/2197cf3f-713c-4297-bfbc-1d6e65d94993/"
+
+coursepack: "https://www.cs3240.org"
