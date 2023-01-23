@@ -13,9 +13,9 @@ nav_order: 4
 1. TOC
 {:toc}
 
-## Project Options and Requirements 
+## Project Options and Requirements
 
-Your team must choose one of these project options.  You have a great deal of agency within these options, but you must stick to the core use cases of the project. 
+Your team must choose one of these project options.  You have a great deal of agency within these options, but you must stick to the core use cases of the project.
 
 You __must__ meet any common and project specific requirements listed below.
 
@@ -23,25 +23,46 @@ You __must__ meet any common and project specific requirements listed below.
 
 All projects must do the following, regardless of idea chosen:
 
-* All projects must incorporate Google user accounts as the primary way that someone logs into the system.  You will need to use the Google account API to make this work.  There are several libraries that are built for Django to work with Google accounts with tutorials.  You should not limit logins to just @virginia.edu accounts!  (this will lock out the faculty :-( )
-* All users must have an account of some kind where they can store their personal information relevant to the app.
-* All users must be able to maintain a list of "friends" in the app, where they can view key information about the other user.  See the project options for details.
-* All projects must incorporate the SIS / Class Listing API that we will provide, which will contain (mostly) up-to-date data from SIS that mirrors what you would currently see from Lou's List.
+* All projects must incorporate Google user accounts as the primary way that someone logs into the system.  You will need to use the Google account API to make this work.  There are several libraries that are built for Django to work with Google accounts with tutorials.
+* You will have to create two different user access levels for each project.  This will take a slightly different form with each project, but the basic idea is some users will be “common” users and some users will be “administrative” users.  Users of one type _should not_ be able to access features of the other type!
+* The two test accounts we will use will be: common user - cs3240.student@gmail.com and admin user - cs3240.super@gmail.com
+* All projects must incorporate the SIS API that we will provide information about.
 * All projects must be built using the prescribed language (Python 3), framework (Django 4), build environment (GitHub Actions CI), source control management (GitHub), and cloud hosting (Heroku).  No exceptions to these will be granted.
-* You __must__ use the PostgreSQL database engine for production on Heroku and continuous integration (on GitHub Actions).  You are allowed to use SQLite for local testing so you do not have to install PostgreSQL on your own maching, but another option is to change your `settings.py` file point to the PostgreSQL DB on Heroku at all times.  
+* You __must__ use the PostgreSQL database engine for production on Heroku and continuous integration (on GitHub Actions).  You are allowed to use SQLite for local testing so you do not have to install PostgreSQL on your own machine, but another option is to change your `settings.py` file point to the PostgreSQL DB on Heroku at all times.  
 
 ## Project Options
 
-_Currently under consideration_
+Here are the project options for Spring 2023!  __NOTE:__ These are the _base_ requirements for your projects and are here to ensure that all three projects are of basically the same complexity.  Projects that only complete these features will not earn much XP.  You will add more use cases for both the student and admin users during your requirements elicitation activities.
 
-### Project Option 1: TBD
+### Project Option 1: Schedule Advisor
 {: .no_toc }
+In order to register for classes at UVA, a student must have their advisor sign off on their schedule.  This app allows students to view courses for the upcoming semester, create a schedule, and then send it to an advisor for approval.
+- Students must be able to search classes by course mnemonic, course number, and course name.
+- Students must be able to add courses to a schedule, which will be saved with the student's account.
+- A schedule cannot have courses that have a time conflict.
+- Students must be able to “submit” the schedule to an advisor to approve the schedule.
+- An advisor should see all schedules available for review upon login.
+- Any advisor should be able to approve or reject any schedule.
+- When a schedule is approved or rejected, the student should be able to see this when they login.
 
-### Project Option 2: TBD
+### Project Option 2: Transfer Guide
 {: .no_toc }
+It is always a challenge for students to know how courses from other universities will transfer to UVA.  This app will allow administrators to list transfer equivalencies and for students to look up courses and request for more courses to be listed.
+- Students must be able to search for courses by university, course mnemonic, course number, and course name.
+   - Example: a student should be able to search for all courses that transfer from NC State, all courses that are equivalent to UVA's CS 3240, or all courses outside UVA that have the word "architecture" in them.
+- Students must be able to submit a request for a course to be evaluated by an administrator.  When the course is submitted, it must contain basic information about the course, including a URL to the course’s home page.
+- Administrators must be able to add courses to the system beyond just approving course requests.
+- Any administrator should be able to approve or reject any course request.
+- Students should be able to see that their requests have been approved or rejected when they login.
 
-### Project Option 3: TBD
+### Project Option 3: Tutor Me
 {: .no_toc }
+Students are often looking for tutors for courses.  This app will help facilitate this matching.
+- Tutors (this projects “administrator” user type) must be able to post the courses that they can tutor by searching through the set of courses by course mnemonic, course number, or course name.
+- Tutors can post their hourly rate and available time frames.
+- Students must be able to search for tutors by class, searching by course mnemonic, course number, or course name.
+- When a student finds a tutor they would like to work with, they must be able to submit a request for tutoring at a particular time.  This time must fall within the tutor’s posted available time frames.
+- Tutors can then see their requests when they login.  They can then approve or reject a tutoring session, which will show up on the student’s page when they login.
 
 ## Team Roles
 
@@ -128,11 +149,11 @@ Each sprint is graded out of 25 XP.  In general, the following grading standard 
 
 __Due:__ {{site.data.semesterinfo.sprint_1.meeting_dates}}
 
-__Goal:__ Have your initial meeting as a team and determine who will be doing what on the team.  This meeting can be any time between when your team is formed and your sprint check meeting with your TA on either {{site.data.semesterinfo.sprint_1.meeting_dates}}.  The Scrum Master of each team MUST complete this form with the team as a part of the Sprint: [Team Declaration Form]({{ site.data.externallinks.team_declaration_form }}).  Also, Scrum Masters should initialize the team GitHub repo through [GitHub Classroom]({{ site.data.externallinks.github_classroom }}).  Please use your assigned team number for the identifier when prompted (e.g. A-03).  Other team members can then go to that link and accept the assignment, selecting the proper team.
+__Goal:__ Have your initial meeting as a team and determine who will be doing what on the team.  This meeting can be any time between when your team is formed and your sprint check meeting with your TA on either {{site.data.semesterinfo.sprint_1.meeting_dates}}.  The Scrum Master of each team MUST complete this form with the team as a part of the Sprint: [Team Declaration Form]({{ site.data.externallinks.team_declaration_form }}).  Also, Scrum Masters should initialize the team GitHub repo through [GitHub Classroom]({{ site.data.externallinks.github_classroom_project }}).  Please use your assigned team number for the identifier when prompted (e.g. A-03).  Other team members can then go to that link and accept the assignment, selecting the proper team.
 
 __Requirements:__  Complete the Team Declaration form above ASAP.  Initialize your GitHub repo and have all team members join.
 
-__TEAM EVALS:__ No Team Evals this week.
+__Team Evals:__ No Team Evals this week.
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  (No, you won't have much to report this week, but think about what's coming up and discuss that.)
 
@@ -149,9 +170,9 @@ __Requirements:__ The team must have a working basic Django app hosted on Heroku
 * ["Great" Example from Fall 2020](https://docs.google.com/document/d/12a8MTkqiUZbnDIs-xRfmCQUb8ozs3jHamdcwp6fuqSc/edit?usp=sharing)
 * ["Good" Example from Fall 2020](https://docs.google.com/document/d/1RxUBAEFjk0HpQ1aFOOX830nenFBX_Idao3vRVBYop1A/edit?usp=sharing)
 
-__TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form her: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint-team-evaluations }})
+__Team Evals:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form here: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
 
-__How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint-report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
+__How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
 ### Sprint 3: {{site.data.semesterinfo.sprint_3.goal}}
 
@@ -159,9 +180,9 @@ __Due:__ {{site.data.semesterinfo.sprint_3.meeting_dates}}
 
 __Goal:__ All projects must have a user account feature for students to login with.  To accomplish this, you are to integrate Google login to your app.
 
-__Requirements:__ A user with a Google Account (not just a Netbadge account!) can login to the system and the system shows in some way that that user has indeed logged in.  You cannot lock your app to just @virginia.edu accounts (otherwise the professors can't login...).  GitHub Actions CI MUST be operational with at least one test case in order to earn full XP.  As you are just getting started with testing, this is more showing us that you have the process setup and that you have some passing tests.  You do not have to have login fully tested at this point.
+__Requirements:__ A user with a Google Account (not just a Netbadge account!) can login to the system and the system shows in some way that that user has indeed logged in.  You should not lock your app to just @virginia.edu accounts.  You must show that both a regular student account _and_ an admin account can login and that they get different screens.
 
-__TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form her: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
+__Team Evals:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form here: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
@@ -169,13 +190,13 @@ __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.
 
 __Due:__ {{site.data.semesterinfo.sprint_4.meeting_dates}}
 
-__Goal:__ All projects must make use of our SIS API for reading information about classes.  For this sprint, create the infrastructure for doing this, showing that you can read information and display it to the screen in a meaningful way in the context of your app (i.e. not just dumping it on the screen). 
+__Goal:__ All projects must make use of the SIS API for reading information about classes.  For this sprint, create the infrastructure for doing this, showing that you can read information and display it to the screen in a meaningful way in the context of your app (i.e. not just dumping it on the screen).  You also must show that you have some form of search working.
 
-__Requirements:__ In the opinion of the TA, significant work was accomplished this week utilizing the SIS API, such that it is visible and mostly usable in the system.  GitHub Actions CI MUST be operational with at multiple test cases in order to earn full XP.  You should be moving more toward having a robust test suite at this point.
+__Requirements:__ In the opinion of the TA, significant work was accomplished this week utilizing the SIS API, such that it is visible and mostly usable in the system.  GitHub Actions CI MUST be operational with at least multiple test cases in order to earn full XP.  As you are just getting started with testing, this is more showing us that you have the process setup and that you have some passing tests.
 
-__TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form her: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
+__Team Evals:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form here: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
 
-__How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint-report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
+__How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
 ### Sprint 5: {{site.data.semesterinfo.sprint_5.goal}}
 
@@ -185,7 +206,7 @@ __Goal:__ Move forward with the next major features of your application, showing
 
 __Requirements:__ In the opinion of the TA, significant work was accomplished this week other major features of the application, such that it is visible and mostly usable in the system.  GitHub Actions should still be working.
 
-__TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form her: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
+__Team Evals:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form here: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
 
 __How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
@@ -197,9 +218,9 @@ __Goal:__ After Sprint 6 is complete, you are going to have other students test 
 
 __Requirments and Full Beta Version:__ In the opinion of the TA, you have an app that is ready for other students to test out (e.g. it doesn't crash, it looks reasonably good, it has most features, etc.).  You will earn 25 XP for the sprint check plus 100 XP as the first half of your overall project score of 250 XP (basically, if you have a working app at this point, we know your final project grade will be at least 100/250 XP, so we can give you those points now).
 
-__TEAM EVALS:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form her: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
+__Team Evals:__ At the end of Sprints 2-6 and at the end of the semester, you will need to fill out an evaluation for _each member_ of your team! You can find the evaluation form here: [Student Team Sprint Evaluations]({{ site.data.externallinks.sprint_team_evaluations }})
 
-__How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint-report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
+__How To Submit:__ Scrum Masters should fill out a [Sprint Report]({{ site.data.externallinks.sprint_report }}) and submit it to Gradescope BEFORE meeting with your TA so they can reference it.  Scrum Masters *must* select their team members in Gradescope when submitting so all members will earn the XP for the sprint.  The main branch of your GitHub repo should be live on Heroku.
 
 ## Final Grading Information
 
@@ -227,6 +248,6 @@ Aspects that will determine the exact grade within a range include but are not l
 * Obvious bugs that should have been corrected
 * Polish
 
-__TEAM EVALS:__ All team members will complete a final, overall team evaluation at the end of the course.
+__Final Team Evals:__ All team members will complete a final, overall team evaluation at the end of the course.  [Final Student Team Sprint Evaluations]({{ site.data.externallinks.final_team_evaluations }})
 
 __The final version of the project must be in GitHub and hosted on Heroku no later than {{ site.data.semesterinfo.project_due_date }}!__
