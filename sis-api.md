@@ -29,6 +29,8 @@ The SIS API is a RESTful web API that returns a JSON object based upon parameter
 
 _Replace 1228 with the appropriate term.  The formula is "1" + [2 digit year] + [12 for Spring, 8 for Fall].  So, 1228 is Fall 2022._
 
+### Finding All Courses from a Department
+
 `https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_ClassSearch?institution=UVA01&term=1228&subject=CS&page=1`
 
 _Replace 1228 with the appropriate term. The formula is "1" + [2 digit year] + [12 for Spring, 8 for Fall].  So, 1228 is Fall 2022.  Replace CS with the desired subject.  Note that many departments with lots of classes will have multiple pages and you will have to go through all of them._
