@@ -77,3 +77,19 @@ As you can see from the examples above, you can add on additional flags using th
 * page=1
 
 For examples of the data, here is the URL to get Prof. Horton's 2:00 section of CS 3240: [https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_ClassSearch?institution=UVA01&term=1232&page=1&instructor_name=Horton&class_nbr=16031](https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_ClassSearch?institution=UVA01&term=1232&page=1&instructor_name=Horton&class_nbr=16031)
+
+### Demo done in class
+
+On Tue., Feb. 28, we did a demonstration in class using Python to retrieve and print data about courses using this API.  This used the Requests libarary [https://requests.readthedocs.io/en/latest/[(https://requests.readthedocs.io/en/latest/) to retrieve data from the server and cover the JSON to a Python dictionary.  Here is part of that code from that program. This code processes a list of courses, retrieving data about each one, then printing some of the "fields" for that course.
+
+```
+    clist = [('MATH','3100'), ('PSYC','2150'), ('STAT','2120')]
+    url = 'https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_ClassSearch?institution=UVA01&term=1238&page=1'
+
+    for c in clist:
+        r = requests.get(url + '&subject=' + c[0] + '&catalog_nbr=' + c[1])
+        for c in r.json():
+            print(c['subject'], c['catalog_nbr'] + '-' + c['class_section'], c['component'], c['descr'], \
+                  c['class_nbr'], c['class_capacity'], c['enrollment_available'])
+```
+Reminder: as shown in lecture, using Firefox to view the JSON returned by calls to the API is very nice, in that it shows both the raw JSON and a cleaner view where you can expand nested components.
