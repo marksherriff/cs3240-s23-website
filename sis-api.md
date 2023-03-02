@@ -80,7 +80,7 @@ For examples of the data, here is the URL to get Prof. Horton's 2:00 section of 
 
 ### Demo done in class
 
-On Tue., Feb. 28, we did a demonstration in class using Python to retrieve and print data about courses using this API.  This used the Requests libarary [https://requests.readthedocs.io/en/latest/[(https://requests.readthedocs.io/en/latest/) to retrieve data from the server and cover the JSON to a Python dictionary.  Here is part of that code from that program. This code processes a list of courses, retrieving data about each one, then printing some of the "fields" for that course.
+On Tue., Feb. 28, we did a demonstration in class using Python to retrieve and print data about courses using this API.  This used the Requests libarary [https://requests.readthedocs.io/en/latest/](https://requests.readthedocs.io/en/latest/) to retrieve data from the server and cover the JSON to a Python dictionary.  Here is part of that code from that program. This code processes a list of courses, retrieving data about each one, then printing some of the "fields" for that course.
 
 ```
     clist = [('MATH','3100'), ('PSYC','2150'), ('STAT','2120')]
